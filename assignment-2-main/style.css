@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header-section */
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    padding: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #161616;
+    border-radius: 20px;
+}
+
+.header-text {
+    color: #FFFFFF;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.header-text p {
+    font-weight: 400;
+}
+
+.header-text button {
+    width: 160px;
+    height: 50px;
+    background-color: #DD0000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-text button a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* hover */
+.header-text button:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+
+.header-image {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.header-image:hover {
+    transform: scale(1.3);
+}
+
+/* close header-section */
+
+/* main-section */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+/* list-bar start */
+.list-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161616;
+    width: 300px;
+    height: 310px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.list-name {
+    /* margin: 10px; */
+    border: 1px solid blue;
+    background-color: #fff;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.list-name h3 a {
+    text-decoration: none;
+    color: #161616;
+    cursor: pointer;
+}
+
+.bg-btn {
+    background-color: #DD0000;
+}
+
+/* list-bar End */
+/* upcoming matches html */
+.mathes-detail {
+    background-color: aqua;
+    padding: 5px;
+    height: 300px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.matches-time {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.schedule-text {
+    color: #4D4D4D;
+}
+
+.matches {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.matches img {
+    width: 95px;
+    height: 60px;
+}
+
+/* all group html */
+.player-details .pl-list {
+    background-color: hsl(34, 82%, 60%);
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.player-details .pl-list:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+
+.pl-list h2 {
+    text-decoration: underline;
+}
+
+/* player details */
+.player-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 50px;
+}
+
+.player {
+    width: 300px;
+    height: 362px;
+    box-shadow: 5px 5px 5px 0px hsla(0, 0%, 0%, 0.078);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.player-image img {
+    width: 300px;
+}
+
+
+.btn {
+    width: 65px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #161616;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.heading {
+    width: 300px;
+    /* height: 54px; */
+    font-weight: 600;
+    font-size: 18px;
+    color: #161616;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* player details end */
+/* main-section close */
+.view-btn {
+    margin-bottom: 50px;
+    text-align: center;
+    display: none;
+    /* padding: 10px; */
+    width: 150px;
+    height: 60px;
+    background: #DD0000;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* footer-start */
+
+.footer {
+    background-color: #161616;
+    height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 150px;
+
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9B9;
+    margin-bottom: 20px;
+}
+
+.social-site {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+}
+
+.social-site i {
+    color: gold;
+}
+
+/* Media Queries */
+/* mobile-Screen */
+@media only screen and (max-width:600px) {
+    body {
+        width: 100%;
+    }
+
+    .header {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-bar {
+        background-color: transparent;
+    }
+
+    .player-details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-text {
+        flex-direction: column;
+
+    }
+
+    .footer {
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .social-site {
+        margin-top: 30px;
+    }
+}
+
+/* mobile-Screen End */
+
+/* tablet-Screen */
+@media only screen and (min-width:601px) and (max-width:900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-bar {
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 200px;
+    }
+
+    .player-details {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 70px;
+    }
+
+    .view-btn {
+        margin-bottom: 50px;
+        display: block;
+        margin-left: 40%;
+    }
+}
